@@ -1,0 +1,37 @@
+﻿@model AvisIpsum.Models.IpsumRequestParams
+
+@{
+    ViewBag.Title = "Avis Ipsum";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div id="ipsumText"></div>
+
+<div class="disclaimer">
+    Disclaimer: this site is not afiliated in any way with Avis Rent a Car. It has been created purely with humorous intent and with no intention to difame.<br />
+    Avis is the sole trademark of its owner. If you are interested in booking a car from Avis, please click <a href="http://www.avis.co.uk">here</a>.
+</div>
+@section leftnav
+{
+    <p>How much Ipsum do you want?</p>
+    @using (@Ajax.BeginForm("IpsumText", "Home", new AjaxOptions { HttpMethod = "GET", UpdateTargetId = "ipsumText" }))
+    {
+        @Html.ValidationSummary(true)
+        <fieldset>
+            @Html.LabelFor(m => m.NumberOfParagraphs)<br />
+            @Html.EditorFor(m => m.NumberOfParagraphs) @Html.ValidationMessageFor(m => m.NumberOfParagraphs)<br />
+            @Html.LabelFor(m => m.WordsPerParagraph)<br />
+            @Html.EditorFor(m => m.WordsPerParagraph) @Html.ValidationMessageFor(m => m.WordsPerParagraph)<br />
+        </fieldset>
+
+        <input type="submit" class="avis-button arrow-right" value="Submit" />
+    }
+}
+
+@section scripts
+{
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+

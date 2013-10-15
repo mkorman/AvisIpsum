@@ -1,0 +1,125 @@
+﻿//@avis-colour: #61c855;
+//@avis-colour: #7D8DD4;
+@avis-colour: #b50000;
+@button-grey: #dddddd;
+@avis-gradient-start: lighten(@avis-colour,17%);
+@avis-gradient-end: darken(@avis-colour,17%);
+@dark-1:#545454;
+@clear-1: #F0F0F0;
+
+.standard-margin {
+    margin:  0px 10px 0px 10px;
+}
+
+.standard-padding {
+    padding: 15px;
+}
+
+.rounded-corners {
+    border-radius: 7px;
+}
+
+body {
+    font-family: 'Segoe UI',Verdana,sans-serif;
+    background-color: @dark-1;
+}
+
+#contentWrapper {
+
+    position:relative;
+    float:left;
+    width: 70%;
+
+    .standard-padding;
+    .rounded-corners;
+    .standard-margin;
+
+    background-color: @clear-1;
+    
+    h3 {
+        color: @avis-colour;
+    }
+
+    h2 {
+        color: @avis-colour;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 16px;
+        color: @dark-1;
+    }
+}
+
+#leftPanel {
+    float: left;
+    background-color: desaturate(@avis-colour,35%);
+    width: 20%;
+    font-size: 1.1em;
+    .standard-padding;
+    .rounded-corners;
+    
+    .text-box {
+        width: 60px;
+        margin: 10px;
+        font-size: 1.1em;
+    }
+
+    p {
+        font-weight: bold;
+        padding: 0px;
+    }
+
+    .field-validation-error {
+        font-size: 0.8em;
+        color: @clear-1;
+    }
+}
+
+fieldset {
+    .rounded-corners;
+}
+
+.avis-gradient {
+    background-image: linear-gradient(top, @avis-gradient-start 0%, @avis-gradient-end 100%);
+    background-image: -o-linear-gradient(top, @avis-gradient-start 0%, @avis-gradient-end 100%);
+    background-image: -moz-linear-gradient(top, @avis-gradient-start 0%, @avis-gradient-end 100%);
+    background-image: -webkit-linear-gradient(top, @avis-gradient-start 0%, @avis-gradient-end 100%);
+    background-image: -ms-linear-gradient(top, @avis-gradient-start 0%, @avis-gradient-end 100%);
+    background-image: -webkit-gradient(
+	    linear,
+	    left top,
+	    left bottom,
+	    color-stop(0.0, @avis-gradient-start),
+	    color-stop(1.0, @avis-gradient-end)
+    );
+}
+
+/* AVIS-styled button in pure CSS */
+
+input.avis-button {
+    margin: 5px;
+    padding: 2px 12px 2px 8px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-style:italic;
+    font-weight: 700;
+    border: solid 3px;
+    border-radius: 16px;
+    border-color: @button-grey;
+    background-color: @avis-colour;
+    color: white;
+    cursor: pointer;
+    .avis-gradient;
+}
+
+input.right-arrow {
+    //.avis-button;
+    .avis-gradient;
+    background-image: url('/Content/Images/arrow-right.gif');
+}
+
+.disclaimer {
+    font-size: 0.7em;
+}
