@@ -10,7 +10,7 @@ namespace AvisIpsum.Models
         // Used to avoid repeating 2 consecutive words
         private int lastChoice = -1;
 
-        static String[] words = new String[] { "Avis", "car", "hire", "extras", "insurance", "waiver", "book", "now", "zero excess",
+        protected static String[] words = new String[] { "Avis", "car", "hire", "extras", "insurance", "waiver", "book", "now", "zero excess",
             "satnav", "flat tyre", "Terms and Conditions", "Bracknell", "unlimited mileage", "driver", "upgrade", "vehicle",
             "pay now", "pay later", "3 minute promise", "loyalty", "delivers", "pick up", "drop off", "winter tyres", "child seat",
             "airport", "Wizard", "service", "damage", "return", "order", "booking", "rental", "duration", "payment method", "AWD",

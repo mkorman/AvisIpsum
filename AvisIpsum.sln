@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.20617.1 PREVIEW
+VisualStudioVersion = 12.0.20827.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvisIpsum", "AvisIpsum\AvisIpsum.csproj", "{3A6DCBE0-369D-4F69-AD29-AA695677E3E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvisIpsum.Test", "AvisIpsum.Test\AvisIpsum.Test.csproj", "{B7899C57-1995-465A-A39B-043C60D13672}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{3A6DCBE0-369D-4F69-AD29-AA695677E3E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A6DCBE0-369D-4F69-AD29-AA695677E3E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A6DCBE0-369D-4F69-AD29-AA695677E3E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7899C57-1995-465A-A39B-043C60D13672}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7899C57-1995-465A-A39B-043C60D13672}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7899C57-1995-465A-A39B-043C60D13672}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7899C57-1995-465A-A39B-043C60D13672}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

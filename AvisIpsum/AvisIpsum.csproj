@@ -134,6 +134,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AvisIpsumText.cs" />
+    <Compile Include="Models\TextFileWordProvider.cs" />
     <Compile Include="Models\IpsumRequestParams.cs" />
     <Compile Include="Models\IWordProvider.cs" />
     <Compile Include="Models\IpsumParagraphProvider.cs" />
@@ -142,6 +143,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Words.txt" />
     <Content Include="Content\Images\arrow-right.gif" />
     <Content Include="Content\Images\arrow-right.JPG" />
     <Content Include="Content\Styles.css">
@@ -239,9 +241,7 @@
     <Content Include="Views\Home\IpsumText.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>

@@ -17,7 +17,7 @@ namespace AvisIpsum.Models
         protected IWordProvider wordProvider;
         protected Random random;
 
-        public IpsumParagraphProvider () : this (new WordProvider())
+        public IpsumParagraphProvider () : this (new TextFileWordProvider())
         {
         }
 
